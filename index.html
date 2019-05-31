@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh" data-blockbyte-bs-uid="80221">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+
+    <script type="text/javascript" charset="utf-8" src="./files/js/jquery-1.9.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="./files/css/common.css" media="all" />
+
+    <style class="blockbyte-bs-style" data-name="content">
+      body > div#blockbyte-bs-indicator > div {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      body > iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,
+      body > iframe#blockbyte-bs-overlay.blockbyte-bs-visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      body.blockbyte-bs-noscroll {
+        overflow: hidden !important;
+      }
+
+      body > div#blockbyte-bs-indicator > div {
+        position: absolute;
+        transform: translate3d(-40px, 0, 0);
+        top: 0;
+        left: 0;
+        width: 40px !important;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 0 10px 10px 0;
+        transition: opacity 0.3s, transform 0.3s;
+        z-index: 2;
+      }
+
+      body > div#blockbyte-bs-indicator > div > span {
+        background-color: #ffffff;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      body > div#blockbyte-bs-indicator[data-pos="right"] {
+        left: auto;
+        right: 0;
+      }
+
+      body > div#blockbyte-bs-indicator[data-pos="right"] > div {
+        transform: translate3d(40px, 0, 0);
+        left: auto;
+        right: 0;
+        border-radius: 10px 0 0 10px;
+      }
+
+      body > div#blockbyte-bs-indicator.blockbyte-bs-fullHeight > div {
+        border-radius: 0;
+      }
+
+      body > div#blockbyte-bs-indicator.blockbyte-bs-hover > div {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+
+      body > div#blockbyte-bs-indicator[data-pos="left"].blockbyte-bs-has-lsb {
+        height: 100% !important;
+        top: 0 !important;
+      }
+
+      body > div#blockbyte-bs-indicator[data-pos="left"].blockbyte-bs-has-lsb > div {
+        background: transparent;
+      }
+
+      body > div#blockbyte-bs-indicator[data-pos="left"].blockbyte-bs-has-lsb > div > span {
+        -webkit-mask-position-y: 20px;
+      }
+
+      body > iframe#blockbyte-bs-sidebar {
+        width: 350px;
+        max-width: none;
+        height: 0;
+        z-index: 2147483646;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+        border: none;
+        display: block !important;
+        transform: translate3d(-350px, 0, 0);
+        transition: width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s;
+      }
+
+      body > iframe#blockbyte-bs-sidebar[data-pos="right"] {
+        left: auto;
+        right: 0;
+        transform: translate3d(350px, 0, 0);
+      }
+
+      body > iframe#blockbyte-bs-sidebar.blockbyte-bs-visible {
+        width: calc(100% + 350px);
+        height: 100%;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      body > iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask {
+        background: none !important;
+      }
+
+      body > iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover) {
+        width: calc(350px + 50px);
+      }
+
+      body > iframe#blockbyte-bs-overlay {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        z-index: 2147483647;
+        border: none;
+        background: rgba(0, 0, 0, 0.5) !important;
+        transition: opacity 0.3s;
+      }
+    </style>
+  </head>
+
+  <body class="body-sty" style="zoom: 1;">
+    <header style="height: 200px; padding: 20px;display: flex; flex-direction: row; justify-content: center;">
+      <div>
+        <div style="margin: 5px 0;">
+          <label style="width: 100px;display: inline-block;">挂角类型:</label>
+          <select style="width: 130px;" class="motu-type">
+            <option value="1">挂角单广告交互</option>
+            <option value="2">挂角双广告交互</option>
+            <option value="3">挂角单广告展示</option>
+            <option value="4">底栏交互长标签</option>
+            <option value="5">底栏交互短标签</option>
+          </select>
+        </div>
+
+        <div style="margin: 5px 0;">
+          <label style="width: 100px;display: inline-block;">挂角位置:</label>
+          <input type="radio" name="kakari_Position" class="kakari_Position" value="1" />左上
+          <input type="radio" name="kakari_Position" class="kakari_Position" value="2" checked />右上
+        </div>
+
+        <div style="margin: 5px 0;">
+          <label style="width: 100px;display: inline-block;">浮层展开位置:</label>
+          <input type="radio" name="float_Position" class="float_Position" value="1" checked />左侧
+          <input type="radio" name="float_Position" class="float_Position" value="2" />右侧
+        </div>
+
+        <div style="margin: 5px 0;">
+          <label style="width: 100px;display: inline-block;">浮层持续时长:</label>
+          <input type="number" value="5" min="2" max="10" style="width: 50px;" class="timeLength" />秒
+        </div>
+
+        <div style="margin: 5px 0;">
+          <label style="width: 100px;display: inline-block;">浮层触发:</label>
+          <input type="radio" name="trigger_Position" class="trigger_Position" value="1" checked />标签
+          <input type="radio" name="trigger_Position" class="trigger_Position" value="2" />原图
+          <input type="radio" name="trigger_Position" class="trigger_Position" value="3" />标签+原图
+        </div>
+
+        <div style="margin: 5px 0;">
+          <button style="width: 60px;" class="trigger-button">触发</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 内容 start -->
+    <div class="container container-w">
+      <div class="content-box clearfix">
+        <!-- col-left start -->
+        <div class="col-lef  pull-left">
+          <!-- 文章内容 start -->
+          <div class="col-main-box col-sty">
+            <div class="cont-box" id="content_bit">
+              <!-- article start -->
+              <article>
+                <h1 class="tit-h1">新一代本田飞度假想图曝光 风格巨变 转型萌宠小王子<em class="bg-ico-sty"></em></h1>
+
+                <div class="txt-ts-box">温馨提示：本文共459个字，6张图，阅读完大概需要1分钟</div>
+
+                <div class="article-content motu_cont" id="openimg_articlecontent">
+                  <!--内容-->
+                  显然是
+                  <a
+                    class="hidden"
+                    href="http://car.bitauto.com/xiaoxingche/"
+                    title=""
+                    data-keytype="Sem"
+                    data-id="392"
+                    target="_blank"
+                    >小型车</a
+                  >
+                  阵营的明星，不仅销量非常稳定，
+                  <a
+                    class="baikekeyl"
+                    href="http://koubei.bitauto.com/"
+                    title=""
+                    data-keytype="Sem"
+                    data-id="278"
+                    target="_blank"
+                    >口碑</a
+                  >
+                  和保值率也都很不错。目前在售的
+                  <a
+                    class="hidden"
+                    href="http://car.bitauto.com/xinfeidu/"
+                    title="飞度"
+                    data-keytype="Serial"
+                    data-id="2408"
+                    target="_blank"
+                    >飞度</a
+                  >
+                  为其第三代车型，而新一代车型已经在测试阶段，预计2019年下半年发布。
+
+                  <p style="position: relative;">
+                    <img
+                      class="imgborder"
+                      src="./files/image/94422488-cf2d-4501-a95b-1851c2351d11_630_w0.jpg"
+                      data="width:630;height:398;"
+                      data-rjs="2"
+                      style="cursor: pointer;"
+                    />
+                  </p>
+                  <!--标签-->
+                </div>
+
+                <!-- 新闻内容 end -->
+              </article>
+              <!-- article end -->
+            </div>
+            <!--结尾处推广-->
+          </div>
+          <!-- 文章内容 end -->
+        </div>
+        <!-- col-left end -->
+        <!-- col-right start -->
+
+        <div class="col-rig  pull-right">
+          <!-- 车型相关 start -->
+          <div class="col-sty col-side-sty">
+            <h2>飞度 相关信息</h2>
+            <!-- 车广告 start -->
+            <div class="side-adv-car" id="rightBrandDetail">
+              <div class="img-box">
+                <a data-channelid="51.12.46" target="_blank" href="http://car.bitauto.com/xinfeidu/"
+                  ><img src="./files/image/1211198162_6.jpg"
+                /></a>
+              </div>
+              <h3><a data-channelid="51.12.46" target="_blank" href="http://car.bitauto.com/xinfeidu/">飞度</a></h3>
+              <p class="price-box">
+                <a
+                  data-channelid="51.12.46"
+                  href="http://car.bitauto.com/xinfeidu/baojia/?leads_source=p009022"
+                  target="_blank"
+                  >7.38-10.28万</a
+                ><span>（厂商指导价）</span>
+              </p>
+              <div class="btn-box">
+                <a
+                  class="btn btn-primary"
+                  data-channelid="51.12.46"
+                  href="http://dealer.bitauto.com/zuidijia/nb2408/"
+                  target="_blank"
+                  >询底价</a
+                >
+              </div>
+            </div>
+            <!-- 车广告 end -->
+            <!-- 图片列表 start -->
+            <div class="car-pic-list clearfix">
+              <div class="img-info-layout-vertical  img-info-layout-vertical-14093">
+                <div class="img">
+                  <a href="http://photo.bitauto.com/picture/2408/5786086/" target="_blank"
+                    ><img src="./files/image/20171227084733473322640_5786086_4.jpg"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://photo.bitauto.com/modelmore/127721/6/1/" target="_blank">外观<em>（262张）</em></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="img-info-layout-vertical  img-info-layout-vertical-14093">
+                <div class="img">
+                  <a href="http://photo.bitauto.com/picture/2408/5786151/" target="_blank"
+                    ><img src="./files/image/2017122708563856387241_5786151_4.jpg"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://photo.bitauto.com/modelmore/127721/7/1/" target="_blank">前排<em>（314张）</em></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="img-info-layout-vertical  img-info-layout-vertical-14093">
+                <div class="img">
+                  <a href="http://photo.bitauto.com/picture/2408/5786178/" target="_blank"
+                    ><img src="./files/image/201712270900230237254_5786178_4.jpg"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://photo.bitauto.com/modelmore/127721/8/1/" target="_blank">后排<em>（115张）</em></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="img-info-layout-vertical  img-info-layout-vertical-14093">
+                <div class="img">
+                  <a href="http://photo.bitauto.com/picture/2408/4842851/" target="_blank"
+                    ><img src="./files/image/23264766310149_4842851_4.jpg"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://photo.bitauto.com/serialmore/2408/2018/12/1/" target="_blank"
+                      >图解<em>（385张）</em></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 图片列表 end -->
+            <!-- 视频列表 start -->
+
+            <div class="car-video-list">
+              <div class="img-info-layout img-info-layout-video img-info-layout-14079">
+                <div class="img">
+                  <a href="http://v.bitauto.com/vplay/479516.html" target="_blank"
+                    ><i class="bg-ico-sty play-btn"></i
+                    ><img src="./files/image/20181416252014.jpg" alt="新飞度将于1月11日上市"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://v.bitauto.com/vplay/479516.html" target="_blank">新飞度将于1月11日上市</a>
+                  </li>
+                  <li class="num">
+                    <span class="play queryElemTag liulan_479516">65.94万</span
+                    ><span class="comment huifu_479516">51</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="img-info-layout img-info-layout-video img-info-layout-14079">
+                <div class="img">
+                  <a href="http://v.bitauto.com/vplay/477407.html" target="_blank"
+                    ><i class="bg-ico-sty play-btn"></i
+                    ><img src="./files/image/201712270711468.jpg" alt="旭子体验本田新潮跑飞度GK5"
+                  /></a>
+                </div>
+                <ul class="p-list">
+                  <li class="name">
+                    <a href="http://v.bitauto.com/vplay/477407.html" target="_blank">旭子体验本田新潮跑飞度GK5</a>
+                  </li>
+                  <li class="num">
+                    <span class="play queryElemTag liulan_477407">64.58万</span
+                    ><span class="comment huifu_477407">268</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 视频列表 end -->
+            <!-- 文字列表 start -->
+
+            <div class="car-txt-list">
+              <div class="list-txt list-txt-m list-txt-default list-txt-style3">
+                <ul>
+                  <li>
+                    <div class="txt">
+                      <strong><a href="http://baa.bitauto.com/fit/" target="_blank">社区</a>|</strong>
+                      <a href="http://baa.bitauto.com/fit/thread-15625443.html" target="_blank"
+                        >【讲讲GK5赛车黑武士的故事】曾经的战友，我摘了你的心脏</a
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="txt">
+                      <strong><a href="http://baa.bitauto.com/fit/" target="_blank">社区</a>|</strong>
+                      <a href="http://baa.bitauto.com/fit/thread-15569228.html" target="_blank"
+                        >老婆上班的代步神器&amp;飞度两年用车感受</a
+                      >
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="txt">
+                      <strong><a href="http://baa.bitauto.com/fit/" target="_blank">社区</a>|</strong>
+                      <a href="http://baa.bitauto.com/fit/thread-15538924.html" target="_blank">7.12灵感启发</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 文字列表 end -->
+          </div>
+
+          <!-- 车型相关 end -->
+          <!-- 广告 start -->
+          <!-- ad four-->
+
+          <div class="col-side_ad display_n">
+            <ins
+              id="div_8c25ad40-516a-4493-9ec6-6e0c3f499d58"
+              type="ad_play"
+              adplay_ip=""
+              adplay_areaname=""
+              adplay_cityname=""
+              adplay_brandid=""
+              adplay_brandname=""
+              adplay_brandtype=""
+              adplay_blockcode="8c25ad40-516a-4493-9ec6-6e0c3f499d58"
+            >
+            </ins>
+          </div>
+          <!-- 广告 end -->
+        </div>
+        <!-- col-right end -->
+      </div>
+      <!--content end-->
+    </div>
+    <!-- 内容 end -->
+    <!--车型相关js end-->
+    <!--motu ad-->
+    <script type="text/javascript" charset="utf-8" src="./files/js/pc_new.js"></script>
+    <script></script>
+  </body>
+</html>
