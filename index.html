@@ -129,10 +129,11 @@
   </head>
 
   <body class="body-sty" style="zoom: 1;">
-    <header style="height: 200px; padding: 20px;display: flex; flex-direction: row; justify-content: center;">
-      <div>
-        <div style="margin: 5px 0;">
-          <label style="width: 100px;display: inline-block;">挂角类型:</label>
+    <header style="padding: 20px;display: flex; flex-direction: column; justify-content: center;">
+      <div style="margin-left: 10vw; font-size: 30px; margin-bottom: 15px;">魔图Demo演示</div>
+      <div style="    display: flex;    justify-content: center;">
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
+          <label style="display: inline-block;">魔图类型:</label>
           <select style="width: 130px;" class="motu-type">
             <option value="1">挂角单广告交互</option>
             <option value="2">挂角双广告交互</option>
@@ -142,31 +143,37 @@
           </select>
         </div>
 
-        <div style="margin: 5px 0;">
-          <label style="width: 100px;display: inline-block;">挂角位置:</label>
-          <input type="radio" name="kakari_Position" class="kakari_Position" value="1" />左上
-          <input type="radio" name="kakari_Position" class="kakari_Position" value="2" checked />右上
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
+          <label style="display: inline-block;">挂角位置:</label>
+          <div>
+            <input type="radio" name="kakari_Position" class="kakari_Position" value="1" />左上
+            <input type="radio" name="kakari_Position" class="kakari_Position" value="2" checked />右上
+          </div>
         </div>
 
-        <div style="margin: 5px 0;">
-          <label style="width: 100px;display: inline-block;">浮层展开位置:</label>
-          <input type="radio" name="float_Position" class="float_Position" value="1" checked />左侧
-          <input type="radio" name="float_Position" class="float_Position" value="2" />右侧
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
+          <label style="display: inline-block;">浮层展开位置:</label>
+          <div>
+            <input type="radio" name="float_Position" class="float_Position" value="1" checked />左侧
+            <input type="radio" name="float_Position" class="float_Position" value="2" />右侧
+          </div>
         </div>
 
-        <div style="margin: 5px 0;">
-          <label style="width: 100px;display: inline-block;">浮层持续时长:</label>
-          <input type="number" value="5" min="2" max="10" style="width: 50px;" class="timeLength" />秒
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
+          <label style="display: inline-block;">浮层持续时长:</label>
+          <div><input type="number" value="5" min="2" max="10" style="width: 50px;" class="timeLength" />秒</div>
         </div>
 
-        <div style="margin: 5px 0;">
-          <label style="width: 100px;display: inline-block;">浮层触发:</label>
-          <input type="radio" name="trigger_Position" class="trigger_Position" value="1" checked />标签
-          <input type="radio" name="trigger_Position" class="trigger_Position" value="2" />原图
-          <input type="radio" name="trigger_Position" class="trigger_Position" value="3" />标签+原图
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
+          <label style="display: inline-block;">浮层触发:</label>
+          <div>
+            <input type="radio" name="trigger_Position" class="trigger_Position" value="1" checked />标签
+            <input type="radio" name="trigger_Position" class="trigger_Position" value="2" />原图
+            <input type="radio" name="trigger_Position" class="trigger_Position" value="3" />标签+原图
+          </div>
         </div>
 
-        <div style="margin: 5px 0;">
+        <div style="display: flex;flex-direction: column; margin: 0 30px;">
           <button style="width: 60px;" class="trigger-button">触发</button>
         </div>
       </div>
