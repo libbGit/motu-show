@@ -308,9 +308,9 @@
 
   const GLOBAL_DATA = {
     mt_url: env.mode == "production" ? "https://pagechoicemotu.gentags.net/mt" : "http://171.84.4.137:8081/mt", //171为测试环境接口，pagechoicemotu为生产环境接口
-    es6_url: "files/js/polyfill.js",
-    jquery_url: "files/js/jquery-1.9.0.js",
-    vue_url: "files/js/vue.js",
+    es6_url: "index-box_files/js/polyfill.js",
+    jquery_url: "index-box_files/js/jquery-1.9.0.js",
+    vue_url: "index-box_files/js/vue.js",
     href: env.mode != "development" ? window.location.href : env.href, //在生产环境上，都是通过真实的url来判断媒体的
     domain: env.mode != "development" ? document.domain : env.domain
   };
@@ -429,12 +429,12 @@
                 "http://120.26.162.46:8555/mtc?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=1",
               logoImg_pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=1,http://171.84.4.137",
-              logo_img_src: "files/image/xiao_tu_001.jpg",
+              logo_img_src: "index-box_files/image/xiao_tu_001.jpg",
               logo_landingUrl: "http://171.84.4.137",
               positionId: 1,
               pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=ad&cPosition=1",
-              url: "files/image/da_tu_001.jpg"
+              url: "index-box_files/image/da_tu_001.jpg"
             },
             {
               cvCode:
@@ -448,12 +448,12 @@
                 "http://120.26.162.46:8555/mtc?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=2",
               logoImg_pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=2",
-              logo_img_src: "files/image/xiao_tu_002.jpg",
+              logo_img_src: "index-box_files/image/xiao_tu_002.jpg",
               logo_landingUrl: "http://171.84.4.137",
               positionId: 2,
               pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=ad&cPosition=2",
-              url: "files/image/da_tu_002.jpg"
+              url: "index-box_files/image/da_tu_002.jpg"
             }
           ],
           closeCvCode:
@@ -468,7 +468,7 @@
           kakari_Position: defaultSetting.kakari_Position, //
           mediaId: 27,
           planId: 160,
-          pointId: ".imgborder",
+          pointId: ".pic_box img",
           positionMark: 1,
           terminal: "pc",
           timeLength: defaultSetting.timeLength,
@@ -498,12 +498,12 @@
                 "http://120.26.162.46:8555/mtc?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=1",
               logoImg_pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=logo&cPosition=1,http://171.84.4.137",
-              logo_img_src: "files/image/xiao_tu_001.jpg",
+              logo_img_src: "index-box_files/image/xiao_tu_001.jpg",
               logo_landingUrl: "http://171.84.4.137",
               positionId: 1,
               pvCode:
                 "http://120.26.162.46:8555/mtv?projectId=56&planId=1554285791979&zoneId=145&mediaId=27&formatId=55&creativeId=174&cType=ad&cPosition=1",
-              url: "files/image/da_tu_show.jpg"
+              url: "index-box_files/image/1231.jpg"
             }
           ],
           closeCvCode:
@@ -518,7 +518,7 @@
           kakari_Position: defaultSetting.kakari_Position, //
           mediaId: 27,
           planId: 160,
-          pointId: ".imgborder",
+          pointId: ".pic_box img",
           positionMark: 1,
           terminal: "pc",
           timeLength: defaultSetting.timeLength,
@@ -547,7 +547,7 @@
               positionId: 1,
               pvCode:
                 "https://pctracking.gentags.net/mtv?projectId=56&planId=1554111188725&zoneId=148&mediaId=27&formatId=73&creativeId=148&cType=ad&cPosition=1",
-              url: "files/image/dilan_chang.png"
+              url: "index-box_files/image/dilan_chang.png"
             }
           ],
           closeCvCode:
@@ -560,7 +560,7 @@
           jss: ["https://images.pagechoice.net/data/athena/js/turn.js;"],
           mediaId: 27,
           planId: 159,
-          pointId: ".imgborder",
+          pointId: ".pic_box img",
           positionMark: 1,
           terminal: "pc",
           timeLength: defaultSetting.timeLength,
@@ -586,7 +586,7 @@
                 "http://171.84.4.137:9001/mtc?projectId=182&planId=1559110413876&zoneId=168&mediaId=32&formatId=96&creativeId=359&cType=logo&cPosition=1",
               logoImg_pvCode:
                 "http://171.84.4.137:9001/mtv?projectId=182&planId=1559110413876&zoneId=168&mediaId=32&formatId=96&creativeId=359&cType=logo&cPosition=1",
-              logo_img_src: "files/image/dilan_duan.jpg",
+              logo_img_src: "index-box_files/image/dilan_duan.jpg",
               logo_landingUrl: "http://171.84.4.137/plan/toInsertPlanPage.do?platform=pc",
               positionId: 1
             }
@@ -601,7 +601,7 @@
           jss: [""],
           mediaId: 32,
           planId: 256,
-          pointId: ".imgborder",
+          pointId: ".pic_box img",
           positionMark: 1,
           terminal: "pc",
           timeLength: defaultSetting.timeLength,
@@ -674,12 +674,12 @@
     createMotuShortShow(mtData);
 
     /**
-              1 挂角单广告交互     
-              2 挂角双广告交互   
-              3 挂角单广告展示   
-              4 底栏交互长标签  
-              5 底栏交互短标签  
-             */
+                1 挂角单广告交互     
+                2 挂角双广告交互   
+                3 挂角单广告展示   
+                4 底栏交互长标签  
+                5 底栏交互短标签  
+               */
     if (mtData.type == 1) {
       let vm = new Vue({
         render: h => h("motu-single")
@@ -754,70 +754,70 @@
         };
       },
       template: ` <div class="mt-main"  @mouseleave="handleMouseleave($event)" v-if="showMain">
-                              <div class="mtHeader">
-                                  <div class="logo_landing" @mouseenter="handleTriggerOnLabel()" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
-                                      <a :href="landingUrl" target="view_window">
-                                        <img :src="url">
-                                      </a>
-                                  </div>
-                              </div>
+                                <div class="mtHeader">
+                                    <div class="logo_landing" @mouseenter="handleTriggerOnLabel()" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
+                                        <a :href="landingUrl" target="view_window">
+                                          <img :src="url">
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
+                                    <div class="mBOne animated" :class="animateCss">
+                                        <div class="mBOClose clearfix">
+                                            <div class="closs__buton" @click="setMotuMonitor(singleData.closeCvCode,close)" >&Chi;</div>
+                                        </div>
+                                        <div class="mtSelectArea" v-show="!isSubmitSuccess">
+                                          <div class="item">
+                                            <label>{{province_title}}</label>
+                                            <select @change="handleChangeProvince" v-model="provinceValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in provinceArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.province.validate">请选择{{province_title}}</span>
+                                          </div>
           
-                              <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
-                                  <div class="mBOne animated" :class="animateCss">
-                                      <div class="mBOClose clearfix">
-                                          <div class="closs__buton" @click="setMotuMonitor(singleData.closeCvCode,close)" >&Chi;</div>
-                                      </div>
-                                      <div class="mtSelectArea" v-show="!isSubmitSuccess">
-                                        <div class="item">
-                                          <label>{{province_title}}</label>
-                                          <select @change="handleChangeProvince" v-model="provinceValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in provinceArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.province.validate">请选择{{province_title}}</span>
+                                          <div class="item">
+                                            <label>{{city_tile}}</label>
+                                            <select @change="handleChangeCity" v-model="cityValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in cityArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.city.validate">请选择{{city_tile}}</span>
+                                          </div>
+          
+                                          <div class="item">
+                                            <label>{{hometown_title}}</label>
+                                            <select v-model="hometownValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in hometownArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.hometown.validate">请选择{{hometown_title}}</span>
+                                          </div>
+          
+                                          <div class="item">
+                                            <label>{{name_title}}</label>
+                                            <input type="text" placeholder="请输入" v-model="nameValue"/>
+                                            <span class="error_tip" v-if="!rules.name.validate">请输入{{name_title}}</span>
+                                          </div> 
+                                          <div class="item">
+                                            <label>{{phone_title}}</label>
+                                            <input type="text" placeholder="请输入" v-model="phoneValue"/>
+                                            <span class="error_tip" v-if="!rules.phone.validate">{{rules.phone.message}}</span>
+                                          </div> 
+          
+                                          <div class="submit">
+                                            <button @click="submit()">立即报名</button>
+                                          </div>
                                         </div>
-        
-                                        <div class="item">
-                                          <label>{{city_tile}}</label>
-                                          <select @change="handleChangeCity" v-model="cityValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in cityArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.city.validate">请选择{{city_tile}}</span>
+                                        <div class="mtSelectArea" v-show="isSubmitSuccess">
+                                          <div style="width: 100%;text-align: center;">
+                                            <span class="submit--success">提交成功 </span>
+                                          </div>
                                         </div>
-        
-                                        <div class="item">
-                                          <label>{{hometown_title}}</label>
-                                          <select v-model="hometownValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in hometownArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.hometown.validate">请选择{{hometown_title}}</span>
-                                        </div>
-        
-                                        <div class="item">
-                                          <label>{{name_title}}</label>
-                                          <input type="text" placeholder="请输入" v-model="nameValue"/>
-                                          <span class="error_tip" v-if="!rules.name.validate">请输入{{name_title}}</span>
-                                        </div> 
-                                        <div class="item">
-                                          <label>{{phone_title}}</label>
-                                          <input type="text" placeholder="请输入" v-model="phoneValue"/>
-                                          <span class="error_tip" v-if="!rules.phone.validate">{{rules.phone.message}}</span>
-                                        </div> 
-        
-                                        <div class="submit">
-                                          <button @click="submit()">立即报名</button>
-                                        </div>
-                                      </div>
-                                      <div class="mtSelectArea" v-show="isSubmitSuccess">
-                                        <div style="width: 100%;text-align: center;">
-                                          <span class="submit--success">提交成功 </span>
-                                        </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>`,
+                                    </div>
+                                </div>
+                            </div>`,
       computed: {},
       methods: {
         init() {
@@ -1011,18 +1011,18 @@
           //   success: data => {
           //     console.log(data);
           //     if (data.status_code == 200) {
-                this.isSubmitSuccess = true;
-                this.setMotuMonitor(this.singleData.adsense[0].form_svCode);
-            //   } else if (data.status_code == 300) {
-            //     this.rules.phone.validate = false;
-            //     this.rules.phone.message = "号码已经注册过";
-            //   } else {
-            //     console.log("请求数据为空！");
-            //   }
-            // },
-            // error: (XMLHttpRequest, textStatus, errorThrown) => {
-            //   console.log("请求失败！");
-            // }
+          this.isSubmitSuccess = true;
+          this.setMotuMonitor(this.singleData.adsense[0].form_svCode);
+          //   } else if (data.status_code == 300) {
+          //     this.rules.phone.validate = false;
+          //     this.rules.phone.message = "号码已经注册过";
+          //   } else {
+          //     console.log("请求数据为空！");
+          //   }
+          // },
+          // error: (XMLHttpRequest, textStatus, errorThrown) => {
+          //   console.log("请求失败！");
+          // }
           // });
         }
       },
@@ -1121,70 +1121,70 @@
         };
       },
       template: ` <div class="mt-main"  @mouseleave="handleMouseleave($event)" v-if="showMain">
-                              <div class="mtHeader">
-                                  <div class="logo_landing">
-                                      <a :href="landingUrl" target="view_window"  class="logo-link">
-                                        <img :src="url" @mouseenter="handleTriggerOnLabel()" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
-                                      </a>
-                                  </div>
-                              </div>
+                                <div class="mtHeader">
+                                    <div class="logo_landing">
+                                        <a :href="landingUrl" target="view_window"  class="logo-link">
+                                          <img :src="url" @mouseenter="handleTriggerOnLabel()" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
+                                    <div class="mBOne animated" :class="animateCss">
+                                        <div class="mBOClose clearfix">
+                                            <div class="closs__buton" @click="setMotuMonitor(singleData.closeCvCode,close)">&Chi;</div>
+                                        </div>
+                                        <div class="mtSelectArea" v-show="!isSubmitSuccess">
+                                          <div class="item">
+                                            <label>{{province_title}}</label>
+                                            <select @change="handleChangeProvince" v-model="provinceValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in provinceArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.province.validate">请选择{{province_title}}</span>
+                                          </div>
           
-                              <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
-                                  <div class="mBOne animated" :class="animateCss">
-                                      <div class="mBOClose clearfix">
-                                          <div class="closs__buton" @click="setMotuMonitor(singleData.closeCvCode,close)">&Chi;</div>
-                                      </div>
-                                      <div class="mtSelectArea" v-show="!isSubmitSuccess">
-                                        <div class="item">
-                                          <label>{{province_title}}</label>
-                                          <select @change="handleChangeProvince" v-model="provinceValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in provinceArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.province.validate">请选择{{province_title}}</span>
+                                          <div class="item">
+                                            <label>{{city_tile}}</label>
+                                            <select @change="handleChangeCity" v-model="cityValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in cityArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.city.validate">请选择{{city_tile}}</span>
+                                          </div>
+          
+                                          <div class="item">
+                                            <label>{{hometown_title}}</label>
+                                            <select v-model="hometownValue">
+                                              <option value="">请选择</option>
+                                              <option v-for="(item,index) in hometownArr" :key="index" :value="item">{{item}}</option>
+                                            </select>
+                                            <span class="error_tip" v-if="!rules.hometown.validate">请选择{{hometown_title}}</span>
+                                          </div>
+          
+                                          <div class="item">
+                                            <label>{{name_title}}</label>
+                                            <input type="text" placeholder="请输入" v-model="nameValue"/>
+                                            <span class="error_tip" v-if="!rules.name.validate">请输入{{name_title}}</span>
+                                          </div> 
+                                          <div class="item">
+                                            <label>{{phone_title}}</label>
+                                            <input type="text" placeholder="请输入" v-model="phoneValue"/>
+                                            <span class="error_tip" v-if="!rules.phone.validate">{{rules.phone.message}}</span>
+                                          </div> 
+          
+                                          <div class="submit">
+                                            <button @click="submit()">立即报名</button>
+                                          </div>
                                         </div>
-        
-                                        <div class="item">
-                                          <label>{{city_tile}}</label>
-                                          <select @change="handleChangeCity" v-model="cityValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in cityArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.city.validate">请选择{{city_tile}}</span>
+                                        <div class="mtSelectArea" v-show="isSubmitSuccess">
+                                          <div style="width: 100%;text-align: center;">
+                                            <span class="submit--success">提交成功 </span>
+                                          </div>
                                         </div>
-        
-                                        <div class="item">
-                                          <label>{{hometown_title}}</label>
-                                          <select v-model="hometownValue">
-                                            <option value="">请选择</option>
-                                            <option v-for="(item,index) in hometownArr" :key="index" :value="item">{{item}}</option>
-                                          </select>
-                                          <span class="error_tip" v-if="!rules.hometown.validate">请选择{{hometown_title}}</span>
-                                        </div>
-        
-                                        <div class="item">
-                                          <label>{{name_title}}</label>
-                                          <input type="text" placeholder="请输入" v-model="nameValue"/>
-                                          <span class="error_tip" v-if="!rules.name.validate">请输入{{name_title}}</span>
-                                        </div> 
-                                        <div class="item">
-                                          <label>{{phone_title}}</label>
-                                          <input type="text" placeholder="请输入" v-model="phoneValue"/>
-                                          <span class="error_tip" v-if="!rules.phone.validate">{{rules.phone.message}}</span>
-                                        </div> 
-        
-                                        <div class="submit">
-                                          <button @click="submit()">立即报名</button>
-                                        </div>
-                                      </div>
-                                      <div class="mtSelectArea" v-show="isSubmitSuccess">
-                                        <div style="width: 100%;text-align: center;">
-                                          <span class="submit--success">提交成功 </span>
-                                        </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>`,
+                                    </div>
+                                </div>
+                            </div>`,
       computed: {},
       methods: {
         init() {
@@ -1372,7 +1372,7 @@
             zoneId: this.singleData.zoneId,
             positionId: this.singleData.adsense[0].positionId
           };
-          
+
           // $.ajax({
           //   type: "post",
           //   url: this.singleData.formSubmitUrl,
@@ -1383,8 +1383,8 @@
           //   success: data => {
           //     console.log(data);
           //     if (data.status_code == 200) {
-                this.isSubmitSuccess = true;
-                this.setMotuMonitor(this.singleData.adsense[0].form_svCode);
+          this.isSubmitSuccess = true;
+          this.setMotuMonitor(this.singleData.adsense[0].form_svCode);
           //     } else if (data.status_code == 300) {
           //       this.rules.phone.validate = false;
           //       this.rules.phone.message = "号码已经注册过";
@@ -1508,81 +1508,81 @@
         };
       },
       template: `
-                <div class="mt-main" :class="show_position" @mouseleave="handleMouseleave($event)" v-if="showMain">
-                    <div class="mtHeader">
-                        <div class="mhOne" @mouseenter="handleTriggerOnLabel()">
-                            <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
-                                <a :href='logo_landingUrl_0' target="view_window"></a>
-                            </div>
-                            <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(singleData.closeCvCode,'close')"></div>
-                        </div>
-                    </div>
-        
-                    <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
-                        <div class="mBOne animated faster" :class="animateCss" v-show="active=='one'">
-                            <div class="mBOPic" :style="bodyTopBackground" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
-                                <a target="view_window" :href='landingUrl_0'></a>
-                            </div>
-                            <div class="success_page" v-show="isSubmitSuccess">
-                                <p class="image"></p>
-                                <p>提交成功感谢您的参与</p>
-                            </div>
-                            <div class="mBOForm" v-show="!isSubmitSuccess">
-                                <p class="title" id="mt_zc1">{{mhOneData.register_title}}</p>
-                                <form>
-                                    <div class="item">
-                                        <label>{{mhOneData.province_title}}</label>
-                                        <select id="mt_province" class="select_area" @change="handleChangeProvince" v-model="mhOneData.provinceValue">
-                                            <option value="">请选择{{mhOneData.province_title}}</option>
-                                            <option v-for="(item,index) in mhOneData.provinceArr" :key="index" :value="item">{{item}}</option>
-                                        </select>
-                                        <span class="error_tip" v-if="!rules.province.validate">请输入{{mhOneData.province_title}}</span>
-                                    </div>
-                                    
-                                    <div class="item">
-                                        <label>{{mhOneData.city_tile}}</label>
-                                        <select id="mt_city" class="select_area" @change="handleChangeCity" v-model="mhOneData.cityValue">
-                                          <option value="">请选择{{mhOneData.city_tile}}</option>
-                                          <option v-for="(item,index) in mhOneData.cityArr" :key="index" :value="item">{{item}}</option>
-                                        </select>
-                                        <span class="error_tip"  v-if="!rules.city.validate">请输入{{mhOneData.city_tile}}</span>
-                                    </div>
-                                   
-                                    <div  class="item">
-                                        <label>{{mhOneData.hometown_title}}</label>
-                                        <select id="mt_homeTown" class="select_area" v-model="mhOneData.hometownValue">
-                                          <option value="">请选择{{mhOneData.hometown_title}}</option>
-                                          <option v-for="(item,index) in mhOneData.hometownArr" :key="index" :value="item">{{item}}</option>
-                                        </select>
-                                        <span class="error_tip" v-if="!rules.hometown.validate">请输入{{mhOneData.hometown_title}}</span>
-                                    </div>
-                                    
-                                    <div  class="item">
-                                        <label>{{mhOneData.name_title}}</label>
-                                        <input id="mt_name" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhOneData.nameValue"/>
-                                        <span class="error_tip" v-if="!rules.name.validate">请输入{{mhOneData.name_title}}</span>
-                                    </div>
-                                    
-                                    <div  class="item">
-                                        <label>{{mhOneData.phone_title}}</label>
-                                        <input maxlength="12" id="mt_phone" placeholder="请输入手机号" class="select_area" v-model="mhOneData.phoneValue"/>
-                                        <span class="error_tip" v-if="!rules.phone.validate">请输入{{rules.phone.message}}</span>
-                                    </div>
-                                    <div class="item">
-                                        <input id="mt_checked1" type="checkbox" v-model="mhOneData.checked"/>
-                                        <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
-                                    </div>
-                                </form>
-                                <p class="submit">
-                                    <button id="submit" @click="gotoRegister()" :class="{disabled:!mhOneData.checked}">提交注册</button>
-                                </p>
-                            </div>
-                            <div class="mBOClose clearfix">
-                                <div class="mbocClose" @click="setMotuMonitor(singleData.closeCvCode,'close')" >关闭广告</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>`,
+                  <div class="mt-main" :class="show_position" @mouseleave="handleMouseleave($event)" v-if="showMain">
+                      <div class="mtHeader">
+                          <div class="mhOne" @mouseenter="handleTriggerOnLabel()">
+                              <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
+                                  <a :href='logo_landingUrl_0' target="view_window"></a>
+                              </div>
+                              <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(singleData.closeCvCode,'close')"></div>
+                          </div>
+                      </div>
+          
+                      <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
+                          <div class="mBOne animated faster" :class="animateCss" v-show="active=='one'">
+                              <div class="mBOPic" :style="bodyTopBackground" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
+                                  <a target="view_window" :href='landingUrl_0'></a>
+                              </div>
+                              <div class="success_page" v-show="isSubmitSuccess">
+                                  <p class="image"></p>
+                                  <p>提交成功感谢您的参与</p>
+                              </div>
+                              <div class="mBOForm" v-show="!isSubmitSuccess">
+                                  <p class="title" id="mt_zc1">{{mhOneData.register_title}}</p>
+                                  <form>
+                                      <div class="item">
+                                          <label>{{mhOneData.province_title}}</label>
+                                          <select id="mt_province" class="select_area" @change="handleChangeProvince" v-model="mhOneData.provinceValue">
+                                              <option value="">请选择{{mhOneData.province_title}}</option>
+                                              <option v-for="(item,index) in mhOneData.provinceArr" :key="index" :value="item">{{item}}</option>
+                                          </select>
+                                          <span class="error_tip" v-if="!rules.province.validate">请输入{{mhOneData.province_title}}</span>
+                                      </div>
+                                      
+                                      <div class="item">
+                                          <label>{{mhOneData.city_tile}}</label>
+                                          <select id="mt_city" class="select_area" @change="handleChangeCity" v-model="mhOneData.cityValue">
+                                            <option value="">请选择{{mhOneData.city_tile}}</option>
+                                            <option v-for="(item,index) in mhOneData.cityArr" :key="index" :value="item">{{item}}</option>
+                                          </select>
+                                          <span class="error_tip"  v-if="!rules.city.validate">请输入{{mhOneData.city_tile}}</span>
+                                      </div>
+                                     
+                                      <div  class="item">
+                                          <label>{{mhOneData.hometown_title}}</label>
+                                          <select id="mt_homeTown" class="select_area" v-model="mhOneData.hometownValue">
+                                            <option value="">请选择{{mhOneData.hometown_title}}</option>
+                                            <option v-for="(item,index) in mhOneData.hometownArr" :key="index" :value="item">{{item}}</option>
+                                          </select>
+                                          <span class="error_tip" v-if="!rules.hometown.validate">请输入{{mhOneData.hometown_title}}</span>
+                                      </div>
+                                      
+                                      <div  class="item">
+                                          <label>{{mhOneData.name_title}}</label>
+                                          <input id="mt_name" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhOneData.nameValue"/>
+                                          <span class="error_tip" v-if="!rules.name.validate">请输入{{mhOneData.name_title}}</span>
+                                      </div>
+                                      
+                                      <div  class="item">
+                                          <label>{{mhOneData.phone_title}}</label>
+                                          <input maxlength="12" id="mt_phone" placeholder="请输入手机号" class="select_area" v-model="mhOneData.phoneValue"/>
+                                          <span class="error_tip" v-if="!rules.phone.validate">请输入{{rules.phone.message}}</span>
+                                      </div>
+                                      <div class="item">
+                                          <input id="mt_checked1" type="checkbox" v-model="mhOneData.checked"/>
+                                          <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
+                                      </div>
+                                  </form>
+                                  <p class="submit">
+                                      <button id="submit" @click="gotoRegister()" :class="{disabled:!mhOneData.checked}">提交注册</button>
+                                  </p>
+                              </div>
+                              <div class="mBOClose clearfix">
+                                  <div class="mbocClose" @click="setMotuMonitor(singleData.closeCvCode,'close')" >关闭广告</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>`,
 
       methods: {
         init() {
@@ -1959,28 +1959,28 @@
         };
       },
       template: `<div class="mt-main" :class="show_position"  @mouseleave="handleMouseleave($event)" v-if="showMain">
-                              <div class="mtHeader">
-                                  <div class="mhOne" @mouseenter="handleTriggerOnLabel()">
-                                      <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
-                                          <a :href="logo_landingUrl_0" target="view_window"></a>'
-                                      </div>
-                                      <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(singleData.closeCvCode,'close')"></div>
-                                  </div>
-                              </div>
-          
-                              <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
-                                  <div class="mBOne animated faster" :class="animateCss" v-show="isActiveOne">
-                                    <div class="mBOPic" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
-                                        <a target="view_window" :href="landingUrl_0">
-                                            <img class="mMBPic" :src="singleData.adsense[0].url" />
-                                        </a>
-                                      </div>
-                                      <div class="mBOClose clearfix">
-                                          <div class="mbocClose" @click="setMotuMonitor(singleData.closeCvCode,close)" >关闭广告</div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>`,
+                                <div class="mtHeader">
+                                    <div class="mhOne" @mouseenter="handleTriggerOnLabel()">
+                                        <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(singleData.adsense[0].logoImg_cvCode)">
+                                            <a :href="logo_landingUrl_0" target="view_window"></a>'
+                                        </div>
+                                        <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(singleData.closeCvCode,'close')"></div>
+                                    </div>
+                                </div>
+            
+                                <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter()">
+                                    <div class="mBOne animated faster" :class="animateCss" v-show="isActiveOne">
+                                      <div class="mBOPic" @click="setMotuMonitor(singleData.adsense[0].cvCode)">
+                                          <a target="view_window" :href="landingUrl_0">
+                                              <img class="mMBPic" :src="singleData.adsense[0].url" />
+                                          </a>
+                                        </div>
+                                        <div class="mBOClose clearfix">
+                                            <div class="mbocClose" @click="setMotuMonitor(singleData.closeCvCode,close)" >关闭广告</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`,
 
       computed: {
         isActiveOne() {
@@ -2261,148 +2261,148 @@
       },
 
       template: `
-              <div class="mt-main" :class="show_position" @mouseleave="handleMouseleave($event)" v-if="showMain">
-                  <div class="mtPointer" :class="activeLabel">
-                      <div class="mmpOne"  @mouseenter="handleTriggerOnLabel('onePointer')" ></div>
-                      <div class="mmpTwo" @mouseenter="handleTriggerOnLabel('twoPointer')"></div>
-                  </div>
-                  <div class="mtHeader" @mouseenter="handleTriggerOnLabel(activeLabel=='one'?'onePointer':'twoPointer')">
-                      <div class="mhOne" v-show="activeLabel=='one'">
-                          <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(dubbleData.adsense[0].logoImg_cvCode)">
-                              <a :href='logo_landingUrl_0' target="view_window"></a>
-                          </div>
-                          <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(dubbleData.closeCvCode,'close')"></div>
-                      </div>
-                      <div class="mhTwo" v-show="activeLabel=='two'" >
-                          <div class="mhTAd" :style="headerBackground" @click="setMotuMonitor(dubbleData.adsense[1].logoImg_cvCode)">
-                              <a :href='logo_landingUrl_0' target="view_window" ></a>
-                          </div>
-                          <div class="mhTClose" :style="headerClosePosition" @click="setMotuMonitor(dubbleData.closeCvCode,'close')"></div>
-                      </div>
-                  </div>
-      
-                  <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter(activeLabel=='one'?'onePointer':'twoPointer')">
-                      <div class="mBOne animated faster" :class="animateCss"  v-show="active=='one'">
-                          <div class="mBOPic" :style="bodyTopBackground" @click="setMotuMonitor(dubbleData.adsense[0].cvCode)">
-                              <a target="view_window" :href='landingUrl_0'></a>
-                          </div>
-                          <div class="success_page" v-show="mhOneData.registerSuccess">
-                              <p class="image"></p>
-                              <p>提交成功感谢您的参与</p>
-                          </div>
-                          <div class="mBOForm" v-show="!mhOneData.registerSuccess">
-                              <p class="title" id="mt_zc1">{{mhOneData.register_title}}</p>
-                              <form>
-                                  <div class="item">
-                                      <label class="title">{{mhOneData.province_title}}</label>
-                                      <select id="mt_province" class="select_area" @change="handleChangeProvince" v-model="mhOneData.provinceValue">
-                                          <option value="">请选择{{mhOneData.province_title}}</option>
-                                          <option v-for="(item,index) in mhOneData.provinceArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip" v-if="!mhOneData.rules.province.validate">请输入{{mhOneData.province_title}}</span>
-                                  </div>
-                                  
-                                  <div class="item">
-                                      <label class="title">{{mhOneData.city_tile}}</label>
-                                      <select id="mt_city" class="select_area" @change="handleChangeCity" v-model="mhOneData.cityValue">
-                                        <option value="">请选择{{mhOneData.city_tile}}</option>
-                                        <option v-for="(item,index) in mhOneData.cityArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip" v-if="!mhOneData.rules.city.validate">请输入{{mhOneData.city_tile}}</span>
-                                  </div>
-                                  
-                                  <div class="item">
-                                      <label class="title">{{mhOneData.hometown_title}}</label>
-                                      <select id="mt_homeTown" class="select_area" v-model="mhOneData.hometownValue">
-                                        <option value="">请选择{{mhOneData.hometown_title}}</option>
-                                        <option v-for="(item,index) in mhOneData.hometownArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip" v-if="!mhOneData.rules.hometown.validate">请输入{{mhOneData.hometown_title}}</span>
-                                  </div>
-                                  
-                                  <div class="item">
-                                      <label class="title">{{mhOneData.name_title}}</label>
-                                      <input id="mt_name" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhOneData.nameValue"/>
-                                      <span class="error_tip" v-if="!mhOneData.rules.name.validate">请输入{{mhOneData.name_title}}</span>
-                                  </div>
-                                  <div class="item">
-                                      <label class="title">{{mhOneData.phone_title}}</label>
-                                      <input maxlength="12" id="mt_phone" placeholder="请输入手机号" class="select_area" v-model="mhOneData.phoneValue"/>
-                                      <span class="error_tip" v-if="!mhOneData.rules.phone.validate">{{mhOneData.rules.phone.message}}</span>
-                                  </div>
-                                  <div class="item">
-                                      <input id="mt_checked1" type="checkbox" v-model="mhOneData.checked"/>
-                                      <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
-                                  </div>
-                              </form>
-                              <p class="submit">
-                                  <button id="submit" @click="gotoRegister()" :class="{disalbed:!mhOneData.checked}">提交注册</button>
-                              </p>
-                          </div>
-                          <div class="mBOClose clearfix">
-                              <div class="mbocClose" @click="setMotuMonitor(dubbleData.closeCvCode,'close')" >关闭广告</div>
-                          </div>
-                      </div>
-                      <div class="mBTwo animated faster" :class="animateCss"  v-show="active=='two'">
-                          <div class="mBTPic" :style="bodyTopBackground" @click="setMotuMonitor(dubbleData.adsense[1].cvCode)">
-                              <a target="view_window" :href='landingUrl_1'></a>
-                          </div>
-                          <div class="success_page" v-show="mhTwoData.registerSuccess">
-                              <p class="image"></p>
-                              <p>提交成功感谢您的参与</p>
-                          </div>
-                          <div class="mBTForm" v-show="!mhTwoData.registerSuccess">
-                              <p class="title" id="mt_zc2">{{mhTwoData.register_title}}</p>
-                              <form>
-                                  <div  class="item">
-                                      <label class="title">{{mhTwoData.province_title}}</label>
-                                      <select id="mt_province2" class="select_area" @change="handleChangeProvince2" v-model="mhTwoData.provinceValue">
-                                        <option value="">请选择{{mhTwoData.province_title}}</option>
-                                        <option v-for="(item,index) in mhTwoData.provinceArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip" v-if="!mhTwoData.rules.province.validate">请输入{{mhTwoData.province_title}}</span>
-                                  </div>
-                                  <div  class="item">
-                                      <label class="title">{{mhTwoData.city_tile}}</label>
-                                      <select id="mt_city2" class="select_area" @change="handleChangeCity2" v-model="mhTwoData.cityValue">
-                                          <option value="">请选择{{mhTwoData.city_tile}}</option>
-                                          <option v-for="(item,index) in mhTwoData.cityArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip"  v-if="!mhTwoData.rules.city.validate">请输入{{mhTwoData.city_tile}}</span>
-                                  </div>
-                                  <div  class="item">
-                                      <label class="title">{{mhTwoData.hometown_title}}</label>
-                                      <select id="mt_homeTown2" class="select_area" v-model="mhTwoData.hometownValue">
-                                        <option value="">请选择{{mhTwoData.hometown_title}}</option>
-                                        <option v-for="(item,index) in mhTwoData.hometownArr" :key="index" :value="item">{{item}}</option>
-                                      </select>
-                                      <span class="error_tip" v-if="!mhTwoData.rules.hometown.validate">请输入{{mhTwoData.hometown_title}}</span>
-                                  </div>
-                                  <div  class="item">
-                                      <label class="title">{{mhTwoData.name_title}}</label>
-                                      <input id="mt_name2" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhTwoData.nameValue">
-                                      <span class="error_tip"  v-if="!mhTwoData.rules.name.validate">请输入{{mhTwoData.name_title}}</span>
-                                  </div>
-                                  <div  class="item">
-                                      <label class="title">{{mhTwoData.phone_title}}</label>
-                                      <input id="mt_phone2" maxlength="11" placeholder="请输入手机号" class="select_area" v-model="mhTwoData.phoneValue">
-                                      <span class="error_tip" v-if="!mhTwoData.rules.phone.validate">{{mhTwoData.rules.phone.message}}</span>
-                                  </div>
-                                  <div  class="item">
-                                      <input id="mt_checked2" type="checkbox" v-model="mhTwoData.checked"/>
-                                      <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
-                                  </div>
-                              </form>
-                              <p class="submit">
-                                  <button id="submit2"  @click="gotoRegister()" :class="{disalbed:!mhTwoData.checked}">提交注册</button>
-                              </p>
-                          </div>
-                          <div class="mBTClose clearfix">
-                              <div class="mbtcClose" @click="setMotuMonitor(dubbleData.closeCvCode,'close')">关闭广告</div>
-                          </div>
-                      </div>
-                  </div>
-              </div>`,
+                <div class="mt-main" :class="show_position" @mouseleave="handleMouseleave($event)" v-if="showMain">
+                    <div class="mtPointer" :class="activeLabel">
+                        <div class="mmpOne"  @mouseenter="handleTriggerOnLabel('onePointer')" ></div>
+                        <div class="mmpTwo" @mouseenter="handleTriggerOnLabel('twoPointer')"></div>
+                    </div>
+                    <div class="mtHeader" @mouseenter="handleTriggerOnLabel(activeLabel=='one'?'onePointer':'twoPointer')">
+                        <div class="mhOne" v-show="activeLabel=='one'">
+                            <div class="mhOAd" :style="headerBackground" @click="setMotuMonitor(dubbleData.adsense[0].logoImg_cvCode)">
+                                <a :href='logo_landingUrl_0' target="view_window"></a>
+                            </div>
+                            <div class="mhOClose" :style="headerClosePosition" @click="setMotuMonitor(dubbleData.closeCvCode,'close')"></div>
+                        </div>
+                        <div class="mhTwo" v-show="activeLabel=='two'" >
+                            <div class="mhTAd" :style="headerBackground" @click="setMotuMonitor(dubbleData.adsense[1].logoImg_cvCode)">
+                                <a :href='logo_landingUrl_0' target="view_window" ></a>
+                            </div>
+                            <div class="mhTClose" :style="headerClosePosition" @click="setMotuMonitor(dubbleData.closeCvCode,'close')"></div>
+                        </div>
+                    </div>
+        
+                    <div class="mtMainBody" v-show="showBody" @mouseenter="handleMouseenter(activeLabel=='one'?'onePointer':'twoPointer')">
+                        <div class="mBOne animated faster" :class="animateCss"  v-show="active=='one'">
+                            <div class="mBOPic" :style="bodyTopBackground" @click="setMotuMonitor(dubbleData.adsense[0].cvCode)">
+                                <a target="view_window" :href='landingUrl_0'></a>
+                            </div>
+                            <div class="success_page" v-show="mhOneData.registerSuccess">
+                                <p class="image"></p>
+                                <p>提交成功感谢您的参与</p>
+                            </div>
+                            <div class="mBOForm" v-show="!mhOneData.registerSuccess">
+                                <p class="title" id="mt_zc1">{{mhOneData.register_title}}</p>
+                                <form>
+                                    <div class="item">
+                                        <label class="title">{{mhOneData.province_title}}</label>
+                                        <select id="mt_province" class="select_area" @change="handleChangeProvince" v-model="mhOneData.provinceValue">
+                                            <option value="">请选择{{mhOneData.province_title}}</option>
+                                            <option v-for="(item,index) in mhOneData.provinceArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip" v-if="!mhOneData.rules.province.validate">请输入{{mhOneData.province_title}}</span>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <label class="title">{{mhOneData.city_tile}}</label>
+                                        <select id="mt_city" class="select_area" @change="handleChangeCity" v-model="mhOneData.cityValue">
+                                          <option value="">请选择{{mhOneData.city_tile}}</option>
+                                          <option v-for="(item,index) in mhOneData.cityArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip" v-if="!mhOneData.rules.city.validate">请输入{{mhOneData.city_tile}}</span>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <label class="title">{{mhOneData.hometown_title}}</label>
+                                        <select id="mt_homeTown" class="select_area" v-model="mhOneData.hometownValue">
+                                          <option value="">请选择{{mhOneData.hometown_title}}</option>
+                                          <option v-for="(item,index) in mhOneData.hometownArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip" v-if="!mhOneData.rules.hometown.validate">请输入{{mhOneData.hometown_title}}</span>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <label class="title">{{mhOneData.name_title}}</label>
+                                        <input id="mt_name" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhOneData.nameValue"/>
+                                        <span class="error_tip" v-if="!mhOneData.rules.name.validate">请输入{{mhOneData.name_title}}</span>
+                                    </div>
+                                    <div class="item">
+                                        <label class="title">{{mhOneData.phone_title}}</label>
+                                        <input maxlength="12" id="mt_phone" placeholder="请输入手机号" class="select_area" v-model="mhOneData.phoneValue"/>
+                                        <span class="error_tip" v-if="!mhOneData.rules.phone.validate">{{mhOneData.rules.phone.message}}</span>
+                                    </div>
+                                    <div class="item">
+                                        <input id="mt_checked1" type="checkbox" v-model="mhOneData.checked"/>
+                                        <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
+                                    </div>
+                                </form>
+                                <p class="submit">
+                                    <button id="submit" @click="gotoRegister()" :class="{disalbed:!mhOneData.checked}">提交注册</button>
+                                </p>
+                            </div>
+                            <div class="mBOClose clearfix">
+                                <div class="mbocClose" @click="setMotuMonitor(dubbleData.closeCvCode,'close')" >关闭广告</div>
+                            </div>
+                        </div>
+                        <div class="mBTwo animated faster" :class="animateCss"  v-show="active=='two'">
+                            <div class="mBTPic" :style="bodyTopBackground" @click="setMotuMonitor(dubbleData.adsense[1].cvCode)">
+                                <a target="view_window" :href='landingUrl_1'></a>
+                            </div>
+                            <div class="success_page" v-show="mhTwoData.registerSuccess">
+                                <p class="image"></p>
+                                <p>提交成功感谢您的参与</p>
+                            </div>
+                            <div class="mBTForm" v-show="!mhTwoData.registerSuccess">
+                                <p class="title" id="mt_zc2">{{mhTwoData.register_title}}</p>
+                                <form>
+                                    <div  class="item">
+                                        <label class="title">{{mhTwoData.province_title}}</label>
+                                        <select id="mt_province2" class="select_area" @change="handleChangeProvince2" v-model="mhTwoData.provinceValue">
+                                          <option value="">请选择{{mhTwoData.province_title}}</option>
+                                          <option v-for="(item,index) in mhTwoData.provinceArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip" v-if="!mhTwoData.rules.province.validate">请输入{{mhTwoData.province_title}}</span>
+                                    </div>
+                                    <div  class="item">
+                                        <label class="title">{{mhTwoData.city_tile}}</label>
+                                        <select id="mt_city2" class="select_area" @change="handleChangeCity2" v-model="mhTwoData.cityValue">
+                                            <option value="">请选择{{mhTwoData.city_tile}}</option>
+                                            <option v-for="(item,index) in mhTwoData.cityArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip"  v-if="!mhTwoData.rules.city.validate">请输入{{mhTwoData.city_tile}}</span>
+                                    </div>
+                                    <div  class="item">
+                                        <label class="title">{{mhTwoData.hometown_title}}</label>
+                                        <select id="mt_homeTown2" class="select_area" v-model="mhTwoData.hometownValue">
+                                          <option value="">请选择{{mhTwoData.hometown_title}}</option>
+                                          <option v-for="(item,index) in mhTwoData.hometownArr" :key="index" :value="item">{{item}}</option>
+                                        </select>
+                                        <span class="error_tip" v-if="!mhTwoData.rules.hometown.validate">请输入{{mhTwoData.hometown_title}}</span>
+                                    </div>
+                                    <div  class="item">
+                                        <label class="title">{{mhTwoData.name_title}}</label>
+                                        <input id="mt_name2" maxlength="6" placeholder="请输入姓名" class="select_area" v-model="mhTwoData.nameValue">
+                                        <span class="error_tip"  v-if="!mhTwoData.rules.name.validate">请输入{{mhTwoData.name_title}}</span>
+                                    </div>
+                                    <div  class="item">
+                                        <label class="title">{{mhTwoData.phone_title}}</label>
+                                        <input id="mt_phone2" maxlength="11" placeholder="请输入手机号" class="select_area" v-model="mhTwoData.phoneValue">
+                                        <span class="error_tip" v-if="!mhTwoData.rules.phone.validate">{{mhTwoData.rules.phone.message}}</span>
+                                    </div>
+                                    <div  class="item">
+                                        <input id="mt_checked2" type="checkbox" v-model="mhTwoData.checked"/>
+                                        <span style="color:#fff">注册即视为同意<a target="view_window" href="http://i.yiche.com/AuthenService/Register/PrivacyPolicy.html" style="color:green">《隐私政策》</a></span>
+                                    </div>
+                                </form>
+                                <p class="submit">
+                                    <button id="submit2"  @click="gotoRegister()" :class="{disalbed:!mhTwoData.checked}">提交注册</button>
+                                </p>
+                            </div>
+                            <div class="mBTClose clearfix">
+                                <div class="mbtcClose" @click="setMotuMonitor(dubbleData.closeCvCode,'close')">关闭广告</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`,
 
       methods: {
         init() {
@@ -2822,13 +2822,13 @@
             //   dataType: "json",
             //   success: data => {
             //     if (data.status_code == 200) {
-                  if (this.active == "one") {
-                    this.mhOneData.registerSuccess = true;
-                    this.setMotuMonitor(this.dubbleData.adsense[0].form_svCode);
-                  } else {
-                    this.mhTwoData.registerSuccess = true;
-                    this.setMotuMonitor(this.dubbleData.adsense[1].form_svCode);
-                  }
+            if (this.active == "one") {
+              this.mhOneData.registerSuccess = true;
+              this.setMotuMonitor(this.dubbleData.adsense[0].form_svCode);
+            } else {
+              this.mhTwoData.registerSuccess = true;
+              this.setMotuMonitor(this.dubbleData.adsense[1].form_svCode);
+            }
             //     } else if (data.status_code == 300) {
             //       if (this.active == "one") {
             //         this.mhOneData.rules.phone.validate = false;
@@ -2964,20 +2964,20 @@
     defaultSetting.trigger_Position = $(".trigger_Position:checked").val();
 
     if (motuType == 1) {
-      defaultSetting.css = ["files/css/Zw/JhsingleCss.css"];
+      defaultSetting.css = ["index-box_files/css/Tk/JhsingleCssPicBox.css"];
     }
     if (motuType == 2) {
-      defaultSetting.css = ["files/css/Zw/JhdubbleCss.css"];
+      defaultSetting.css = ["index-box_files/css/Tk/JhdoubleCssPicBox.css"];
     }
     if (motuType == 3) {
-      defaultSetting.css = ["files/css/Zw/ZssingleCss.css"];
+      defaultSetting.css = ["index-box_files/css/Tk/ZssingleCssPicBox.css"];
     }
-    if (motuType == 4) {
-      defaultSetting.css = ["files/css/Zw/JhlongCss.css"];
-    }
-    if (motuType == 5) {
-      defaultSetting.css = ["files/css/Zw/JhshortCss.css"];
-    }
+    // if (motuType == 4) {
+    //   defaultSetting.css = ["index-box_files/css/Tk/JhlongCss.css"];
+    // }
+    // if (motuType == 5) {
+    //   defaultSetting.css = ["index-box_files/css/Tk/JhshortCss.css"];
+    // }
 
     console.log("321312");
     start();
